@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+#tasklist::-webkit-scrollbar {
+    display: none;
+}
+
+#AssignedTask::-webkit-scrollbar {
+    display: none;
+}

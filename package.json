@@ -1,0 +1,20 @@
+{
+  "name": "ems",
+  "version": "1.0.0",
+  "description": " ",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "author": "Teja",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.17",
+    "parcel": "^2.14.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^4.0.17"
+  }
+}
