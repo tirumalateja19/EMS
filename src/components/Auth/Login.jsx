@@ -12,8 +12,7 @@ const Login = ({ LoginUser }) => {
     setUser("");
     setPassword("");
   };
-  const data = useContext(AuthContext);
-  console.log(data);
+  
   return (
     <div className="w-full h-screen flex  items-center justify-center">
       <form

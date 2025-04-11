@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import ReactDOM from "react-dom/client";
-import App from "./src/App";
-import ContextAPI from "./src/context/ContextAPI";
-import { getLocalStorage } from "./src/utils/localStorage";
+import App from "./App";
+import ContextAPI from "./context/ContextAPI";
+import { getLocalStorage, setLocalStorage } from "./utils/localStorage";
 
 const Content = () => {
   // useEffect(() => {
-  //   setLocalStorage();
-  //   getLocalStorage();
+  //   // setLocalStorage();
+  //   // getLocalStorage();
   // });
   return (
     <>

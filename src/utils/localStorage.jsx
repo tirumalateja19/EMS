@@ -1,12 +1,18 @@
 const employees = [
   {
     id: 1,
-    email: "employee1@example.com",
+    name: "Teja Chowdary",
+    email: "teja@ind.com",
     password: "12345",
+    currentTasks: 1,
+    totalTasks: 3,
+    completedTasks: 1,
+    failedTasks: 1,
+    activeTasks: 1,
     tasks: [
       {
-        title: "Build Login Page",
-        description: "Create responsive login form using React",
+        title: "Update Login UI",
+        description: "Enhance the login form for better UX",
         date: "2025-04-05",
         category: "Frontend",
         active: true,
@@ -15,8 +21,8 @@ const employees = [
         failed: false,
       },
       {
-        title: "JWT Integration",
-        description: "Implement JWT auth in Node backend",
+        title: "Backend Auth Flow",
+        description: "Implement secure auth flow in Node.js",
         date: "2025-04-03",
         category: "Backend",
         active: false,
@@ -25,8 +31,8 @@ const employees = [
         failed: false,
       },
       {
-        title: "Error Logger Setup",
-        description: "Add centralized logging using Winston",
+        title: "Monitor Server Errors",
+        description: "Add logging with proper alerts",
         date: "2025-04-01",
         category: "DevOps",
         active: false,
@@ -38,12 +44,18 @@ const employees = [
   },
   {
     id: 2,
-    email: "employee2@example.com",
+    name: "Arjun Mehta",
+    email: "arjun@ind.com",
     password: "123456",
+    currentTasks: 2,
+    totalTasks: 4,
+    completedTasks: 1,
+    failedTasks: 0,
+    activeTasks: 2,
     tasks: [
       {
-        title: "Create REST API",
-        description: "Design CRUD endpoints for user data",
+        title: "Build User API",
+        description: "Develop REST APIs for user module",
         date: "2025-04-02",
         category: "Backend",
         active: true,
@@ -52,8 +64,8 @@ const employees = [
         failed: false,
       },
       {
-        title: "Integrate Firebase Auth",
-        description: "Setup Google login using Firebase",
+        title: "Google Sign-in Setup",
+        description: "Enable Google auth via Firebase",
         date: "2025-04-04",
         category: "Auth",
         active: false,
@@ -62,8 +74,8 @@ const employees = [
         failed: false,
       },
       {
-        title: "Project Setup",
-        description: "Initial project structure using Vite + React",
+        title: "Project Bootstrap",
+        description: "Setup the React + Vite base project",
         date: "2025-03-30",
         category: "Setup",
         active: false,
@@ -72,8 +84,8 @@ const employees = [
         failed: false,
       },
       {
-        title: "Fix CORS Error",
-        description: "Handle CORS in Express API",
+        title: "Fix API CORS",
+        description: "Resolve cross-origin issues in Express",
         date: "2025-04-06",
         category: "Backend",
         active: true,
@@ -85,12 +97,18 @@ const employees = [
   },
   {
     id: 3,
-    email: "employee3@example.com",
+    name: "Sneha Verma",
+    email: "sneha@ind.com",
     password: "1234567",
+    currentTasks: 1,
+    totalTasks: 3,
+    completedTasks: 1,
+    failedTasks: 0,
+    activeTasks: 1,
     tasks: [
       {
-        title: "UI Design in Figma",
-        description: "Design the dashboard layout",
+        title: "Design Dashboard",
+        description: "Create layout for the dashboard",
         date: "2025-03-31",
         category: "Design",
         active: false,
@@ -99,8 +117,8 @@ const employees = [
         failed: false,
       },
       {
-        title: "Navbar Component",
-        description: "Reusable navbar for SPA",
+        title: "Reusable Navbar",
+        description: "Develop shared navbar component",
         date: "2025-04-01",
         category: "Frontend",
         active: false,
@@ -109,8 +127,8 @@ const employees = [
         failed: false,
       },
       {
-        title: "Dark Mode Toggle",
-        description: "Add theme switcher in React",
+        title: "Dark Mode Switch",
+        description: "Toggle light/dark themes in app",
         date: "2025-04-02",
         category: "Frontend",
         active: true,
@@ -122,12 +140,18 @@ const employees = [
   },
   {
     id: 4,
-    email: "employee4@example.com",
+    name: "Vikram Patel",
+    email: "vikram@ind.com",
     password: "12345678",
+    currentTasks: 1,
+    totalTasks: 3,
+    completedTasks: 0,
+    failedTasks: 1,
+    activeTasks: 1,
     tasks: [
       {
-        title: "Redux Setup",
-        description: "Integrate Redux for state management",
+        title: "Setup Redux Toolkit",
+        description: "Configure Redux with slices",
         date: "2025-04-03",
         category: "Frontend",
         active: true,
@@ -136,8 +160,8 @@ const employees = [
         failed: false,
       },
       {
-        title: "Add Pagination",
-        description: "Implement pagination on dashboard",
+        title: "Table Pagination",
+        description: "Add pagination to employee list",
         date: "2025-04-05",
         category: "Frontend",
         active: false,
@@ -146,8 +170,8 @@ const employees = [
         failed: false,
       },
       {
-        title: "Unit Testing",
-        description: "Write Jest tests for user components",
+        title: "Write Component Tests",
+        description: "Test dashboard components with Jest",
         date: "2025-04-06",
         category: "Testing",
         active: false,
@@ -159,12 +183,18 @@ const employees = [
   },
   {
     id: 5,
-    email: "employee5@example.com",
+    name: "Meera Kulkarni",
+    email: "meera@ind.com",
     password: "123456789",
+    currentTasks: 1,
+    totalTasks: 3,
+    completedTasks: 1,
+    failedTasks: 0,
+    activeTasks: 1,
     tasks: [
       {
-        title: "Admin Panel",
-        description: "Create dashboard with role access",
+        title: "Admin Dashboard Setup",
+        description: "Build layout for admin panel",
         date: "2025-04-01",
         category: "Fullstack",
         active: true,
@@ -173,8 +203,8 @@ const employees = [
         failed: false,
       },
       {
-        title: "Dockerize App",
-        description: "Add Docker support for deployment",
+        title: "Deploy with Docker",
+        description: "Prepare Dockerfile for production",
         date: "2025-04-03",
         category: "DevOps",
         active: false,
@@ -183,77 +213,13 @@ const employees = [
         failed: false,
       },
       {
-        title: "Optimize Images",
-        description: "Lazy loading and compression for assets",
+        title: "Image Optimization",
+        description: "Improve loading speed with lazy loading",
         date: "2025-04-02",
         category: "Performance",
         active: false,
         newTask: true,
         completed: false,
-        failed: false,
-      },
-    ],
-  },
-  {
-    id: 6,
-    email: "employee6@example.com",
-    password: "pass123",
-    tasks: [
-      {
-        title: "Create Blog Editor",
-        description: "Build WYSIWYG editor for blog posts",
-        date: "2025-04-02",
-        category: "Frontend",
-        active: true,
-        newTask: false,
-        completed: false,
-        failed: false,
-      },
-      {
-        title: "SEO Audit",
-        description: "Analyze app with Lighthouse",
-        date: "2025-04-04",
-        category: "Performance",
-        active: false,
-        newTask: true,
-        completed: false,
-        failed: false,
-      },
-    ],
-  },
-  {
-    id: 7,
-    email: "employee7@example.com",
-    password: "pass456",
-    tasks: [
-      {
-        title: "Webhook Integration",
-        description: "Add webhook to trigger on signup",
-        date: "2025-04-05",
-        category: "Backend",
-        active: false,
-        newTask: true,
-        completed: false,
-        failed: false,
-      },
-      {
-        title: "Stripe Setup",
-        description: "Integrate Stripe for payments",
-        date: "2025-04-06",
-        category: "Payments",
-        active: true,
-        newTask: false,
-        completed: false,
-        failed: false,
-      },
-      {
-        title: "Fix Bugs in Cart Logic",
-        description: "Resolve cart total and item bugs",
-        date: "2025-04-03",
-        category: "Bugfix",
-        active: false,
-        newTask: false,
-        completed: true,
         failed: false,
       },
     ],
@@ -263,12 +229,14 @@ const employees = [
 const admin = [
   {
     id: 1,
-    email: "admin1@example.com",
+    name: "Ravi Sharma",
+    email: "ravi.admin@ind.com",
     password: "adminpass1",
   },
   {
     id: 2,
-    email: "admin2@example.com",
+    name: "Anjali Iyer",
+    email: "anjali.admin@ind.com",
     password: "adminpass2",
   },
 ];
@@ -279,8 +247,8 @@ export const setLocalStorage = () => {
   // without this stringify method the data will be in object form so its necessary to convert
 };
 export const getLocalStorage = () => {
-  const employee = JSON.parse(localStorage.getItem("employees"));
-  const adminData = JSON.parse(localStorage.getItem("admin"));
+  const employees = JSON.parse(localStorage.getItem("employees"));
+  const admin = JSON.parse(localStorage.getItem("admin"));
   // we need to parse the string data into Json to access
-  return { employee, adminData };
+  return { employees, admin };
 };

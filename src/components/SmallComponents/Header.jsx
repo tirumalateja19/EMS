@@ -1,13 +1,16 @@
 import React from "react";
 
-const Header = () => {
+const Header = (props) => {
+  const { data } = props;
+  const { name } = data;
+
   return (
     <div className="flex items-center justify-between ">
       <div>
         <h1 className="text-xl font-bold text-white">
           Hello 👋🏻
           <br />
-          <span className="font-semibold text-3xl">Tirumala Teja</span>
+          <span className="font-semibold text-3xl">{name}</span>
         </h1>
       </div>
       <div>
