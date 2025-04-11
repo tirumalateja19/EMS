@@ -7,6 +7,7 @@ const ContextAPI = ({ children }) => {
   const [loggedUser, setLoggedUser] = useState(null);
 
   useEffect(() => {
+    // localStorage.clear();
     if (!localStorage.getItem("admin") || !localStorage.getItem("employees")) {
       setLocalStorage();
     }

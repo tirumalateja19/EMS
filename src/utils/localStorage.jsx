@@ -1,36 +1,39 @@
 const employees = [
   {
-    id: 1,
-    name: "Teja Chowdary",
+    empId: 1,
+    name: "Teja",
     email: "teja@ind.com",
     password: "12345",
-    currentTasks: 1,
-    totalTasks: 3,
+    newTasks: 0,
     completedTasks: 1,
     failedTasks: 1,
     activeTasks: 1,
+    totalTasks: 3,
     tasks: [
       {
+        taskId: "1_0",
         title: "Update Login UI",
         description: "Enhance the login form for better UX",
         date: "2025-04-05",
         category: "Frontend",
-        active: true,
+        active: false,
         newTask: false,
         completed: true,
         failed: false,
       },
       {
+        taskId: "1_1",
         title: "Backend Auth Flow",
         description: "Implement secure auth flow in Node.js",
         date: "2025-04-03",
         category: "Backend",
-        active: false,
-        newTask: true,
+        active: true,
+        newTask: false,
         completed: false,
         failed: false,
       },
       {
+        taskId: "1_2",
         title: "Monitor Server Errors",
         description: "Add logging with proper alerts",
         date: "2025-04-01",
@@ -43,17 +46,18 @@ const employees = [
     ],
   },
   {
-    id: 2,
-    name: "Arjun Mehta",
+    empId: 2,
+    name: "Arjun",
     email: "arjun@ind.com",
     password: "123456",
-    currentTasks: 2,
-    totalTasks: 4,
+    newTasks: 1,
     completedTasks: 1,
     failedTasks: 0,
     activeTasks: 2,
+    totalTasks: 4,
     tasks: [
       {
+        taskId: "2_0",
         title: "Build User API",
         description: "Develop REST APIs for user module",
         date: "2025-04-02",
@@ -64,6 +68,7 @@ const employees = [
         failed: false,
       },
       {
+        taskId: "2_1",
         title: "Google Sign-in Setup",
         description: "Enable Google auth via Firebase",
         date: "2025-04-04",
@@ -74,6 +79,7 @@ const employees = [
         failed: false,
       },
       {
+        taskId: "2_2",
         title: "Project Bootstrap",
         description: "Setup the React + Vite base project",
         date: "2025-03-30",
@@ -84,6 +90,7 @@ const employees = [
         failed: false,
       },
       {
+        taskId: "2_3",
         title: "Fix API CORS",
         description: "Resolve cross-origin issues in Express",
         date: "2025-04-06",
@@ -96,17 +103,18 @@ const employees = [
     ],
   },
   {
-    id: 3,
-    name: "Sneha Verma",
+    empId: 3,
+    name: "Sneha",
     email: "sneha@ind.com",
     password: "1234567",
-    currentTasks: 1,
-    totalTasks: 3,
+    newTasks: 1,
     completedTasks: 1,
     failedTasks: 0,
     activeTasks: 1,
+    totalTasks: 3,
     tasks: [
       {
+        taskId: "3_0",
         title: "Design Dashboard",
         description: "Create layout for the dashboard",
         date: "2025-03-31",
@@ -117,6 +125,7 @@ const employees = [
         failed: false,
       },
       {
+        taskId: "3_1",
         title: "Reusable Navbar",
         description: "Develop shared navbar component",
         date: "2025-04-01",
@@ -127,6 +136,7 @@ const employees = [
         failed: false,
       },
       {
+        taskId: "3_2",
         title: "Dark Mode Switch",
         description: "Toggle light/dark themes in app",
         date: "2025-04-02",
@@ -139,17 +149,18 @@ const employees = [
     ],
   },
   {
-    id: 4,
-    name: "Vikram Patel",
+    empId: 4,
+    name: "Vikram",
     email: "vikram@ind.com",
     password: "12345678",
-    currentTasks: 1,
-    totalTasks: 3,
+    newTasks: 1,
     completedTasks: 0,
     failedTasks: 1,
     activeTasks: 1,
+    totalTasks: 3,
     tasks: [
       {
+        taskId: "4_0",
         title: "Setup Redux Toolkit",
         description: "Configure Redux with slices",
         date: "2025-04-03",
@@ -160,6 +171,7 @@ const employees = [
         failed: false,
       },
       {
+        taskId: "4_1",
         title: "Table Pagination",
         description: "Add pagination to employee list",
         date: "2025-04-05",
@@ -170,6 +182,7 @@ const employees = [
         failed: false,
       },
       {
+        taskId: "4_2",
         title: "Write Component Tests",
         description: "Test dashboard components with Jest",
         date: "2025-04-06",
@@ -182,17 +195,18 @@ const employees = [
     ],
   },
   {
-    id: 5,
-    name: "Meera Kulkarni",
+    empId: 5,
+    name: "Meera",
     email: "meera@ind.com",
     password: "123456789",
-    currentTasks: 1,
-    totalTasks: 3,
+    newTasks: 1,
     completedTasks: 1,
     failedTasks: 0,
     activeTasks: 1,
+    totalTasks: 3,
     tasks: [
       {
+        taskId: "5_0",
         title: "Admin Dashboard Setup",
         description: "Build layout for admin panel",
         date: "2025-04-01",
@@ -203,6 +217,7 @@ const employees = [
         failed: false,
       },
       {
+        taskId: "5_1",
         title: "Deploy with Docker",
         description: "Prepare Dockerfile for production",
         date: "2025-04-03",
@@ -213,6 +228,7 @@ const employees = [
         failed: false,
       },
       {
+        taskId: "5_2",
         title: "Image Optimization",
         description: "Improve loading speed with lazy loading",
         date: "2025-04-02",
@@ -229,13 +245,13 @@ const employees = [
 const admin = [
   {
     id: 1,
-    name: "Ravi Sharma",
+    name: "Ravi",
     email: "ravi.admin@ind.com",
     password: "adminpass1",
   },
   {
     id: 2,
-    name: "Anjali Iyer",
+    name: "Anjali",
     email: "anjali.admin@ind.com",
     password: "adminpass2",
   },

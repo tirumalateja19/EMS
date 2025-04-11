@@ -20,7 +20,7 @@ const Login = ({ LoginUser }) => {
           SubmitHandler(e);
         }}
       >
-        <div className="flex flex-col gap-10 border-2 border-emerald-700 p-15 rounded-2xl">
+        <div className="flex flex-col gap-10 border-2 border-emerald-700 p-15 rounded-2xl w-[24vw]">
           <input
             required
             value={user}
