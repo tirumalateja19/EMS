@@ -3,11 +3,11 @@ import Header from "../SmallComponents/Header";
 import TaskBody from "../SmallComponents/TaskBody";
 import TasksList from "../SmallComponents/TasksList";
 
-const EmployeeDashboard = ({ data }) => {
+const EmployeeDashboard = ({ data, onLogout }) => {
   console.log(data);
   return (
     <div className="bg-[#1c1c1c] h-screen p-10">
-      <Header data={data} />
+      <Header data={data} onLogout={onLogout} />
       <TaskBody data={data} />
       <TasksList data={data} />
     </div>

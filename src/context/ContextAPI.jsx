@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from "react";
-import { getLocalStorage } from "../utils/localStorage";
+import { getLocalStorage, setLocalStorage } from "../utils/localStorage";
 
 export const AuthContext = createContext();
 
@@ -7,6 +7,9 @@ const ContextAPI = ({ children }) => {
   const [loggedUser, setLoggedUser] = useState(null);
 
   useEffect(() => {
+    if (!localStorage.getItem("admin") || !localStorage.getItem("employees")) {
+      setLocalStorage();
+    }
     const { employees, admin } = getLocalStorage();
     setLoggedUser({ employees, admin });
   }, []);

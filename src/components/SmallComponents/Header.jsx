@@ -1,7 +1,6 @@
 import React from "react";
 
-const Header = (props) => {
-  const { data } = props;
+const Header = ({ data, onLogout }) => {
   const { name } = data;
 
   return (
@@ -14,7 +13,10 @@ const Header = (props) => {
         </h1>
       </div>
       <div>
-        <button className="bg-red-700 px-5 py-3 rounded-lg shadow-lg font-bold text-white cursor-pointer">
+        <button
+          className="bg-red-700 px-5 py-3 rounded-lg shadow-lg font-bold text-white cursor-pointer"
+          onClick={onLogout}
+        >
           Log Out
         </button>
       </div>
